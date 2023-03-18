@@ -54,4 +54,9 @@ dependencies {
 
 // Navigation implement
 
+// ViewModel implementation
+    implementation ("androidx.lifecycle:lifecycle-viewmodel:2.3.0")
+  //  implementation ("androidx.activity:activity-ktx:1.2.0")
+
+
 }
