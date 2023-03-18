@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.databinding.DataBindingUtil
 import com.example.kisileruygulamasimvvm.R
 import com.example.kisileruygulamasimvvm.databinding.FragmentKisiKayitBinding
 
@@ -13,22 +14,16 @@ import com.example.kisileruygulamasimvvm.databinding.FragmentKisiKayitBinding
 class KisiKayitFragment : Fragment() {
     private lateinit var tasarim : FragmentKisiKayitBinding
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        tasarim = FragmentKisiKayitBinding.inflate(inflater,container,false)
+        tasarim = DataBindingUtil.inflate(inflater,R.layout.fragment_kisi_kayit,container,false)
 
-        tasarim.toolbarKisiKayit.title = "Kişi Kayıt"
+        tasarim.kisiKayitFragment = this // Yetki verildi.
+        tasarim.kisiKayitToolbarBaslik = "Kişi Kayıt"
 
-        tasarim.buttonKaydet.setOnClickListener {
-
-            val kisi_ad = tasarim.editTextAdKayit.text.toString()
-            val kisi_tel = tasarim.editTextTelKayit.text.toString()
-
-            kayit(kisi_ad,kisi_tel)
-        }
 
         return tasarim.root
     }
 
-    fun kayit(kisi_ad : String, kisi_tel : String) {
+    fun buttonKaydet(kisi_ad : String, kisi_tel : String) {
 
         Log.e("Kişi Kayıt","${kisi_ad}-${kisi_tel}")
     }
