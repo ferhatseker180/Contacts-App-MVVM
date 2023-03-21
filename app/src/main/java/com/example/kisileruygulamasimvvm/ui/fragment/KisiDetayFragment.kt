@@ -15,8 +15,10 @@ import com.example.kisileruygulamasimvvm.databinding.FragmentKisiDetayBinding
 import com.example.kisileruygulamasimvvm.ui.viewmodel.AnasayfaViewModel
 import com.example.kisileruygulamasimvvm.ui.viewmodel.KisiDetayViewModel
 import com.example.kisileruygulamasimvvm.ui.viewmodel.KisiKayitViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
 
+@AndroidEntryPoint
 class KisiDetayFragment : Fragment() {
     private lateinit var tasarim : FragmentKisiDetayBinding
     private lateinit var viewModel : KisiDetayViewModel

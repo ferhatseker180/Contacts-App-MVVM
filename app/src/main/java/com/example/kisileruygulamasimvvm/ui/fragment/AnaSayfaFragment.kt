@@ -19,8 +19,10 @@ import com.example.kisileruygulamasimvvm.ui.adapter.KisilerAdapter
 import com.example.kisileruygulamasimvvm.ui.viewmodel.AnasayfaViewModel
 import com.example.kisileruygulamasimvvm.ui.viewmodel.KisiKayitViewModel
 import com.example.kisileruygulamasimvvm.util.gecisYap
+import dagger.hilt.android.AndroidEntryPoint
 
 
+@AndroidEntryPoint
 class AnaSayfaFragment : Fragment(),SearchView.OnQueryTextListener {
     private lateinit var tasarim : FragmentAnaSayfaBinding
     private lateinit var viewModel : AnasayfaViewModel
