@@ -13,6 +13,7 @@ import com.example.kisileruygulamasimvvm.databinding.CardTasarimBinding
 import com.example.kisileruygulamasimvvm.databinding.FragmentAnaSayfaBinding
 import com.example.kisileruygulamasimvvm.ui.fragment.AnaSayfaFragmentDirections
 import com.example.kisileruygulamasimvvm.ui.viewmodel.AnasayfaViewModel
+import com.example.kisileruygulamasimvvm.util.gecisYap
 import com.google.android.material.snackbar.Snackbar
 
 class KisilerAdapter(private val mContext : Context,
@@ -46,7 +47,7 @@ class KisilerAdapter(private val mContext : Context,
 
         t.satirCard.setOnClickListener {
             val gecis = AnaSayfaFragmentDirections.kisiDetayGecis(kisi = kisi)
-            Navigation.findNavController(it).navigate(gecis)
+            Navigation.gecisYap(it,gecis)
         }
 
         t.imageViewSil.setOnClickListener {

@@ -18,6 +18,7 @@ import com.example.kisileruygulamasimvvm.databinding.FragmentAnaSayfaBinding
 import com.example.kisileruygulamasimvvm.ui.adapter.KisilerAdapter
 import com.example.kisileruygulamasimvvm.ui.viewmodel.AnasayfaViewModel
 import com.example.kisileruygulamasimvvm.ui.viewmodel.KisiKayitViewModel
+import com.example.kisileruygulamasimvvm.util.gecisYap
 
 
 class AnaSayfaFragment : Fragment(),SearchView.OnQueryTextListener {
@@ -67,7 +68,7 @@ class AnaSayfaFragment : Fragment(),SearchView.OnQueryTextListener {
     }
 
     fun fabTikla(it : View) {
-        Navigation.findNavController(it).navigate(R.id.kisiKayitGecis)
+        Navigation.gecisYap(it,R.id.kisiKayitGecis)
 
     }
 
