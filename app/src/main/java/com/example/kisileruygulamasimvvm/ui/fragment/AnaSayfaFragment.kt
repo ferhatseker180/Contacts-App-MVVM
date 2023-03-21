@@ -38,6 +38,7 @@ class AnaSayfaFragment : Fragment(),SearchView.OnQueryTextListener {
 
             val adapter = KisilerAdapter(requireContext(),it,viewModel)
             tasarim.kisilerAdapter = adapter
+
         }
 
 
@@ -88,11 +89,6 @@ class AnaSayfaFragment : Fragment(),SearchView.OnQueryTextListener {
 
 
 
-    // Sayfaya geri dönüldüğünde güncellenmiş halde ana sayfa olması için...
-    override fun onResume() {
-        super.onResume()
-        viewModel.kisileriYukle()
 
-    }
 
 }
