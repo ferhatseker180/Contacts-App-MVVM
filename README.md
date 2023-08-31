@@ -4,6 +4,6 @@
 ![add screen](https://github.com/ferhatseker180/Contacts-App-MVVM/blob/master/app/src/main/res/drawable/add.PNG)
 
 ## Purpose of the Application
-**In this application, the guide implementation was implemented in accordance with MVVM. Used Dagger Hilt, Room, Recycler View, Fragment, View Model and Extensions**
+**In this application, In this application you can share food similar to Instagram platform. The application was made in accordance with MVVM**
 
 [Github Linki](https://github.com/ferhatseker180/Contacts-App-MVVM)
